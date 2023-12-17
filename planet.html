@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+    background-image: url(photos/bg.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+  ul{
+    border-radius: 24px;
+    width: 70%;
+    margin-left: 10%;
+    background-color: rgba(11, 8, 8,0.364);
+     backdrop-filter: blur(4px);
+}
+.head {
+   display: inline;
+   line-height: 50px;
+   width: 100%;
+   margin: 40px;
+   padding: 10px;
+   border-radius: 24px;
+   color: #ffffff;
+   text-align: center;  
+   flex-wrap: nowrap;  
+}
+.head:hover{
+  padding: 10px;
+background-color: rgb(51, 32, 225);
+cursor:pointer;
+}
+.login{
+           color: #ffffff;
+           text-decoration: none;
+       }
+  .bord{
+    flex-wrap: nowrap;
+     padding: 1px;
+    margin-top: 1%;
+    width: 70%;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 18px 0 rgba(51, 174, 251, 0.411), 0 5px 19px 0 rgba(51, 176, 251, 1);
+    margin-left: 14%;
+}
+        .GALAXY{
+            margin-left: 10%;
+            margin-top: 0%;
+font-weight: 700;
+font-size: 48px;
+line-height: 86px;
+
+background: linear-gradient(rgba(255, 0, 0, 0.747262) 0.00%, rgba(255, 255, 255, 0.740543) 40.56%, rgba(233, 33, 33, 0.727) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+        }
+  
+  .carousel-wrapper {
+    height: 500px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto ;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  h1{
+    position: absolute;
+width: 204px;
+height: 65px;
+right: 675px;
+top: -30px;
+
+font-weight: 400;
+font-size: 38px;
+line-height: 46px;
+text-align: center;
+
+color: #FFFFFF;
+  }
+  p{
+    margin-top: 32%;
+    font-size: large;
+    color: #fff;
+    position: relative;
+    right: 550px;
+    width: 200%;
+  }
+  button{
+    position: absolute;
+    background-color: #FFFFFF;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 20px;
+    right: 210%;
+    top: 58%;
+   }
+   button:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+   }
+  .arrow-prev {
+    left: -800px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%) rotate(135deg);
+    border: 3px solid white;
+    border-left: none;
+    border-top: none;
+  }
+  .arrow-next {
+    right: -300px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%) rotate(-45deg);
+    border: 3px solid white;
+    border-left: none;
+    border-top: none;
+  }
+  
+  
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-image: url(photos/Rotating_earth_animated_transparent.gif);
+    margin-left: 60%;
+    background-size: 100%;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+  }
+  .item-2 {
+    background: url(photos/mars.gif);
+    margin-left: 60%;
+    background-size: 100%;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+  }
+  .item-3 {
+    background: url(photos/jupiter1.gif);
+    margin-left: 60%;
+    background-size: 100%;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+  }
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  </style>
+</head>
+<body>
+  <div id="container">
+  <div style="display: flex;">
+    <div class="GALAXY">GALAXY</div>
+    <ul class="bord b bg">
+     <li class="head"><a href="index.html" class="login"><em>  Home</em> </a></li>
+     <li class="head"> <a href="bigbang.html" class="login"><em> Big Bang</em></a></li>
+     <li class="head"><a href="planet.html" class="login"><em>Planets</em> </a></li>
+     <li class="head"><a href="blackhole.html" class="login"><em> Blackhole</em></a></li>
+     <li class="head"><a href="login.html" class="login"><em> Login</em></a></li>
+     <li class="head"><a href="register.html" class="login"><em>Register</em></a></li>
+    </ul>
+</div>
+  <div class="carousel-wrapper">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <span id="item-3"></span>
+    <div class="carousel-item item-1">
+      <a href="#item-3"  class="arrow-prev arrow"></a>
+      <h1>Earth</h1>
+     <p> Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive. Earth is about eight light minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one revolution.</p>
+     <form action="https://en.wikipedia.org/wiki/Earth">
+      <button type="submit">READ MORE</a></button>
+  </form>
+      <a href="#item-2" class="arrow-next arrow"></a>
+    </div>
+
+    <div class="carousel-item item-2">
+      <a href="#item-1" class="arrow-prev arrow"></a>
+      <h1>Mars</h1>
+      <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war. </p>
+      <form action="https://en.wikipedia.org/wiki/Mars">
+        <button type="submit">READ MORE</a></button>
+    </form>
+      <a href="#item-3" class="arrow-next arrow"></a>
+    </div>
+
+    <div class="carousel-item item-3">
+      <a href="#item-2" class="arrow-prev arrow"></a>
+      <h1>Jupiter</h1>
+      <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun.</p>
+      <form action="https://en.wikipedia.org/wiki/Jupiter">
+        <button type="submit">READ MORE</a></button>
+    </form>
+      <a href="#item-1" class="arrow-next arrow"></a>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

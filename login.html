@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        ul{
+    border-radius: 24px;
+    width: 70%;
+    margin-left: 10%;
+    background-color: rgba(11, 8, 8,0.364);
+     backdrop-filter: blur(4px);
+}
+.head {
+   display: inline;
+   line-height: 50px;
+   width: 100%;
+   margin: 4%;
+   padding: 1%;
+   border-radius: 24px;
+   color: #ffffff;
+   text-align: center;  
+     
+}
+.head:hover{
+  padding: 10px;
+background-color: rgb(51, 32, 225);
+cursor:pointer;
+}
+.login{
+           color: #ffffff;
+           text-decoration: none;
+       }
+  .bord{
+    flex-wrap: nowrap;
+     padding: 1px;
+    margin-top: 1%;
+    width: 70%;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 18px 0 rgba(51, 174, 251, 0.411), 0 5px 19px 0 rgba(51, 176, 251, 1);
+    margin-left: 14%;
+}
+        .GALAXY{
+            margin-left: 10%;
+            margin-top: 0%;
+font-weight: 700;
+font-size: 48px;
+line-height: 86px;
+
+background: linear-gradient(rgba(255, 0, 0, 0.747262) 0.00%, rgba(255, 255, 255, 0.740543) 40.56%, rgba(233, 33, 33, 0.727) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+        }
+        .gly{
+            align-items: center;
+           }
+           .b{
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.364);
+        }
+        .bg{
+            backdrop-filter: blur(4px);
+        }
+        form{
+            width: 350px;
+            height: 400px;
+            padding: 40px;
+           margin-top: 8%;
+           margin-left: 40%;
+           background: rgba(255, 255, 255, 1);
+           border-radius: 25px;
+           text-align: center;
+           box-shadow: 0 20px 198px 0 rgba(0, 0, 0, 1), 0 5px 19px 0 rgba(0, 0, 0, 1);
+        }
+         h1{
+            color: rgb(214, 204, 204);
+            margin-left: -20px;
+            background: none;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400px;
+        }
+         input
+        {
+            border: none;
+            background: none;
+            display: block;
+            color: #fff;
+            text-align: center;
+            margin: 14px 24px;
+            margin-top: 30px;
+            width: 200px;
+            outline: none;
+            border-bottom: 1px solid #b20808;
+        }
+        button{
+            background: none;
+            display: block;
+            margin-left: 70px;
+            text-align: center;
+            color: #fff;
+            border: 2px solid #b20808;
+            border-radius: 24px;
+            margin-top: 35px;
+            width: 100px;
+            height: 35px;
+            cursor: pointer;
+            font-family: 'IM FELL DW Pica SC';
+        }
+        button:hover{
+            background-color: #b20808;
+            font-family: 'IM FELL DW Pica SC';
+        }
+         span{
+            color: rgb(205, 198, 198);
+            font-size: 19px;
+            margin-left: -20px;
+        }
+         .pa{
+            color: #b20808;
+            font-size: 19px;
+        }
+        ::placeholder{
+            color: #b20808;
+        }
+        input:focus::placeholder{
+            color: transparent;
+        }
+      body{
+        background-image: url(photos/login.jpg);
+        background-size:100% 126%;
+        height: 100%;
+        background-repeat: no-repeat;
+      }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <div style="display: flex;">
+            <div class="GALAXY">GALAXY</div>
+            <ul class="bord bg">
+             <li class="head"><a href="index.html" class="login"><em>  Home</em> </a></li>
+             <li class="head"> <a href="bigbang.html" class="login"><em> Big Bang</em></a></li>
+             <li class="head"><a href="planet.html" class="login"><em>Planets</em> </a></li>
+             <li class="head"><a href="blackhole.html" class="login"><em> Blackhole</em></a></li>
+             <li class="head"><a href="login.html" class="login"><em> Login</em></a></li>
+             <li class="head"><a href="register.html" class="login"><em>Register</em></a></li>
+            </ul>
+        </div>
+   <form class="b bg" action="index.html">
+       <h1>Login</h1>
+       <input type="text" placeholder="username" required>
+       <input type="password" placeholder="password" required>
+       <button type="submit" value="login">Login</button><br>
+       <span>Forget <a href="" class="pa">password</a></span>
+   </form>
+</div>
+</body>
+</html>
